@@ -478,7 +478,7 @@ body {
 /* Our clients */
 .our-clients {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .our-clients .item:hover,
