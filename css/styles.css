@@ -196,8 +196,13 @@ body {
   letter-spacing: 0.02em;
 }
 
+.contacts-nav .item {
+  display: flex;
+  align-items: center;
+}
+
 .contacts-nav .item::before {
-  display: inline-block;
+  display: block;
   content: '';
 }
 
@@ -296,9 +301,9 @@ body {
   background-image: url(../images/techno.svg);
 }
 
-.feature-list .item:hover::before {
+/* .feature-list .item:hover::before {
   background-color: #2196f3;
-}
+} */
 
 .feature-list .item + .item {
   margin-left: 30px;
@@ -434,9 +439,9 @@ body {
   padding-top: 30px;
   padding-bottom: 24px;
 
-  border-left: 1px solid #eeeeee;
+  /* border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee; */
 }
 
 .icon-instagram {
@@ -719,21 +724,27 @@ body {
 .section-list.works .item:hover,
 .section-list.works .item:focus {
   background-color: var(--accent-color);
+  border-radius: 4px;
 }
 
 .card {
+  display: block;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   overflow: hidden;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .card-content {
   padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
+  /* border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px; */
 }
 
 /* Footer Form */
