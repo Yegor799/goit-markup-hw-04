@@ -501,20 +501,20 @@ body {
 
 .our-clients .item:hover,
 .our-clients .item:focus {
-  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
+  fill: #2196f3;
 }
 
 .our-clients .item {
-  display: block;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
+  /* background-repeat: no-repeat;
+  background-position: center; */
 }
 
-.first-client-logo {
+/* .first-client-logo {
   background-image: url(../images/logo11.svg);
 }
 
@@ -536,6 +536,13 @@ body {
 
 .sixth-client-logo {
   background-image: url(../images/logo66.svg);
+} */
+
+.client-logo {
+  fill: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Footer */
