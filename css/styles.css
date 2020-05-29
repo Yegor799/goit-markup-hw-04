@@ -109,8 +109,6 @@ body {
 /* Header */
 
 .header {
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
   border-bottom: 1px solid #ececec;
 }
 
@@ -272,46 +270,15 @@ body {
   width: 270px;
 }
 
-/* .feature-list .item::before {
-  display: block;
-  content: '';
-  border-radius: 4px;
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--secondary-background-color);
-} */
-
-/* .icon-detail::before {
-  background-image: url(../images/detail.svg);
-} */
-
 .feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   border-radius: 4px;
-  background-position: center;
+
   background-color: var(--secondary-background-color);
 }
-
-.icon-detail {
-  margin: 25px 102px;
-}
-
-.icon-time {
-  margin: 25px 101px;
-}
-
-.icon-plan {
-  margin: 25px 100px;
-}
-
-.icon-techno {
-  margin: 25px 100px;
-}
-
-/* .feature-list .item:hover::before {
-  background-color: #2196f3;
-} */
 
 .feature-list .item + .item {
   margin-left: 30px;
@@ -335,19 +302,6 @@ body {
   font-size: 14px;
   line-height: 1.7;
 }
-
-/* .feature-list__image {
-  border: 1px solid transparent;
-  border-radius: 4px;
-  padding: 25px 100px;
-
-  background-color: var(--secondary-background-color);
-} */
-
-/* .feature-list__image:hover,
-.feature-list__image:focus {
-  background-color: var(--accent-color);
-} */
 
 /* What we do */
 
@@ -440,10 +394,6 @@ body {
 .team-card__content {
   padding-top: 30px;
   padding-bottom: 24px;
-
-  /* border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee; */
 }
 
 .social-icons {
@@ -458,33 +408,6 @@ body {
 .social-icons {
   color: currentColor;
 }
-
-/* .icon-twitter {
-  fill: currentColor;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-}
-
-.icon-facebook {
-  color: #afb1b8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-}
-
-.icon-linkedin {
-  color: #afb1b8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-} */
 
 .social-networks .social-icons:hover,
 .social-networks .social-icons:focus {
@@ -510,33 +433,7 @@ body {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  /* background-repeat: no-repeat;
-  background-position: center; */
 }
-
-/* .first-client-logo {
-  background-image: url(../images/logo11.svg);
-}
-
-.second-client-logo {
-  background-image: url(../images/logo22.svg);
-}
-
-.third-client-logo {
-  background-image: url(../images/logo33.svg);
-}
-
-.fourth-client-logo {
-  background-image: url(../images/logo44.svg);
-}
-
-.fifth-client-logo {
-  background-image: url(../images/logo55.svg);
-}
-
-.sixth-client-logo {
-  background-image: url(../images/logo66.svg);
-} */
 
 .client-logo {
   fill: #afb1b8;
@@ -620,14 +517,9 @@ body {
 }
 
 .social-list .item {
-  display: inline-block;
   height: 44px;
   width: 44px;
   background-color: rgba(255, 255, 255, 0.1);
-
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 50%;
 }
 
@@ -635,21 +527,10 @@ body {
   margin-left: 10px;
 }
 
-.instagram-logo {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(7, 7, 7, 0.1)),
-    url(../images/instagram2.svg);
-}
-
-.twitter-logo {
-  background-image: url(../images/twitter2.svg);
-}
-
-.facebook-logo {
-  background-image: url(../images/facebook2.svg);
-}
-
-.linkedin-logo {
-  background-image: url(../images/linkedin2.svg);
+.social-list__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyright {
@@ -741,7 +622,8 @@ body {
 
 .section-list.works .item:hover,
 .section-list.works .item:focus {
-  background-color: var(--accent-color);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
@@ -752,17 +634,17 @@ body {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   overflow: hidden;
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
+  /* box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12); */
 }
 
 .card-content {
   padding: 20px 24px;
-  /* border-left: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px; */
+  border-bottom-left-radius: 5px;
 }
 
 /* Footer Form */
