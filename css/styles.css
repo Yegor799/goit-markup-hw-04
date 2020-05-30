@@ -426,6 +426,7 @@ body {
 .our-clients .item:focus {
   /* background-color: var(--accent-color); */
   fill: #2196f3;
+  border: 1px solid var(--accent-color);
 }
 
 .our-clients .item {
